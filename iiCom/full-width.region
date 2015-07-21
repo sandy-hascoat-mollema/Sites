@@ -1,0 +1,14 @@
+<!-- begin main content section -->
+        <section id="content" class="clearfix">   
+			<div class="col span_12_of_12">
+				<!--CONTENT INJECTION POINT--> 
+				{squarespace.main-content}
+				
+				
+				
+			</div>
+		</section>
+<!-- end main content section -->
+            
+             
+     

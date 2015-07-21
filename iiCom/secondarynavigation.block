@@ -1,0 +1,21 @@
+<nav id="secondary-navigation">
+  <ul class="secondarynav">
+
+    {.repeated section items}
+    <li class="{.section active} active-link{.end}">
+
+      {.section collection}
+        <a href="{fullUrl}">{navigationTitle}</a>
+      {.end}
+
+      {.section externalLink}
+        <a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a>
+      {.end}
+
+    </li>
+    {.end}
+	<li><a href="tel:5612357474">Sales (561) 235-7474</a></li>
+	<li><a href="/site-search"><img src="/assets/icon_search.png" /></a></li>
+
+  </ul>
+</nav>

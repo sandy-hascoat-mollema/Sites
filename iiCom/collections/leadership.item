@@ -1,0 +1,70 @@
+
+{.section item}
+
+  <!--WRAPPER-->
+  
+  <article id="post-{id}" class="{@|item-classes}">
+    
+    <!--POST TILE-->
+
+    <h1 class="title">
+      {.passthrough?}
+        <a href="{sourceUrl}">{title}</a>
+      {.or}
+        <a href="{fullUrl}">{title}</a>
+      {.end}
+    </h1>
+
+    <!--MAIN CONTENT-->
+
+    {body}
+
+    <!--BLOG INJECTION-->
+
+    {postItemInjectCode}    
+
+
+
+  
+   
+    <!--LOCATION-->
+
+    {.section location}
+      {.section addressTitle}
+        {addressTitle}
+        {addressLine1}
+        {addressLine2}
+        {addressCountry}
+      {.end}
+    {.end}
+
+   
+
+  </article>
+
+{.end}
+    
+
+<!--PAGINATION-->
+  
+{.section pagination}
+  <nav>
+
+    <!--NEWER PAGE-->
+
+    {.section prevItem}
+      <a href="{fullUrl}">&laquo; Previous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    {.or}
+      <a class="disabled" style="display:none">&laquo; Previous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    {.end}
+    
+    <!--OLDER PAGE-->
+
+    {.section nextItem}
+      <a href="{fullUrl}">Next &raquo;</a>
+    {.or}
+      <a class="disabled" style="display:none">Next &raquo;</a>
+    {.end}
+
+  </nav>
+{.end}

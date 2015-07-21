@@ -1,0 +1,284 @@
+</div>
+	<!-- END MAIN CONTENT WRAP -->
+
+<!--Begin Footer-->  
+    <div id="footer_wrap">
+		<footer class="group" id="footer">
+		
+		<div class="section group clearfix">
+			<div class="col span_1_of_9">
+				<div class="footer_logo"> </div>
+			</div>
+			<div class="col span_8_of_9">
+				<h1>Turning click throughs into breakthroughs.</h1> 
+			</div>
+		</div>
+		
+		
+        	
+			<!-- begin footer row 1 -->
+				<div class="section group clearfix">
+				
+					<div class="col span_4_of_9">
+						<h2>About ion interactive</h2>
+						<div class="footer_block linkdec">
+						ion gives marketers the ability to go beyond landing pages—launching and testing extraordinary landing web and mobile experiences with a simple drag-and-drop interface that anyone can use—no technical or design skills required. These qualitatively superior landing experiences significantly improve lead generation and customer acquisition.
+						</div>
+						
+						<div class="footer_block">
+						<h3>Latest News</h3>
+						
+						<squarespace:block-field id="footerNewsFeedBlock" columns="12" />
+						<a href="/news">More News</a>
+						</div>
+						
+						<div class="footer_block block">
+						<a href="/leadership">Leadership</a>
+						<a href="/press-coverage">Press Coverage</a>
+						<a href="/careers">Careers</a>
+						</div>
+
+					</div>
+					
+					<div class="col span_3_of_9">
+						
+						
+						
+						<h2>Getting Started</h2>
+
+						<div class="footer_block">
+							<h3>Attend a Demo</h3>
+							<p>See, firsthand how the ion platform delivers digital marketing agility and performance.</p>
+							<a href="/attend-a-platform-demo" class="btn btn_small btn_gray">Demo</a>
+						</div>
+	
+						<div class="footer_block">
+							<h3>Request a Trial</h3>
+							<p>Get hands-on experience with a trial of the ion platform.</p>
+							<a href="/request-a-platform-trial" class="btn btn_small btn_gray">Trial</a>
+						</div>
+						
+						<div class="footer_block">
+							<h3>Request Pricing</h3>
+							<p>Tell us a little bit about your needs and we’ll get back to you with specific recommendations.</p>
+							<a href="/request-pricing" class="btn btn_small btn_gray">Pricing</a>
+						</div>
+						
+						<div class="footer_block">
+							<h3>Contact Sales</h3>
+							<p>Speak with a digital marketing professional, share your needs and learn about how ion can help.</p>
+							<a href="/contact-sales" class="btn btn_small btn_gray">Sales</a>
+						</div>
+						
+						
+					</div>
+					
+					<div class="col span_2_of_9">
+						<h2>Contact Us</h2>
+						
+						<p class="footer_block">Sales<br />
+						<a href="tel:5612357474" class="tel">(561) 561.235.7474<br />
+						<a href="mailto:info@ioninteractive.com">info@ioninteractive.com</a><br />
+						</p>
+						
+						<p class="footer_block">Main<br />
+						<a href="tel:8884664332" class="tel">(888) ion.idea (466.4332)</a><br />
+						<a href="tel:5613949484" class="tel">(561) 394.9484</a>
+						
+						</p>
+
+						<p class="footer_block">Florida<br />
+						200 E Palmetto Pk Rd<br />
+						Suite 107<br />
+						Boca Raton, FL 33432</p>
+
+						<p class="footer_block">Massachusetts<br />
+						One Broadway<br />
+						14th Floor<br />
+						Cambridge, MA  02142</p>
+
+					
+						
+						<p class="footer_block">
+						
+							<a href="http://www.linkedin.com/companies/ion-interactive" class="social" target="_blank"><img src="/assets/social_icon_grey_li.png" border="0" alt="Linkedin" /></a> 
+							<a href="http://twitter.com/ioninteractive" class="social" target="_blank"><img src="/assets/social_icon_grey_tw.png" border="0" alt="Twitter" /></a> 
+							<a href="http://www.facebook.com/ioninteractive" class="social" target="_blank"><img src="/assets/social_icon_grey_fb.png" border="0" alt="Facebook" /></a>
+						</p>
+						
+						
+					</div>
+					
+				</div>
+			<!-- end footer row 1 -->
+			
+			<!-- begin footer row 2 -->
+				<div class="section group clearfix">
+				
+					<div class="col span_1_of_5 block">
+						
+						<h4><a href="/landing-page-innovation">Beyond Landing Pages</a></h4>
+				
+						<a href="/landing-page-innovation#tab_1_content_1">Impress Instantly</a>
+						<a href="/landing-page-innovation#tab_1_content_2">Engage Deeply</a>
+						<a href="/landing-page-innovation#tab_1_content_3">Experiment Boldly</a>
+						<a href="/landing-page-innovation#tab_1_content_4">Move Swiftly</a>
+						<a href="/landing-page-innovation#tab_1_content_5">Target Precisely</a>
+						<a href="/landing-page-innovation#tab_1_content_6">Play Nicely</a>
+						<a href="/landing-page-innovation#tab_1_content_7">Connect Everywhere</a>
+						
+						
+					</div>
+					
+					<div class="col span_1_of_5 block">
+						<h4><a href="/software">Software</a></h4>
+						<a href="/amazing-landing-experiences">Amazing Landing Experiences</a>
+						<a href="/landing-page-targeting-and-personalization">Targeting &amp; Personalization</a>
+						<a href="/landing-page-ab-multivariate-testing">A/B &amp; Multivariate Testing</a>
+						<a href="/mobile-landing-pages">Mobile Optimization</a>
+						<a href="/landing-page-software-security-and-reliability">Security &amp; Reliability</a>
+						<a href="/landing-page-software-integrations">Integrations</a>
+						<a href="/marketer-friendly-support">Support</a>
+					</div>
+					
+					<div class="col span_1_of_5 block">
+						<h4><a href="/landing-page-services">Services</a></h4>
+						<a href="/landing-page-services#tab_1_content_1">Smart Launch</a>
+						<a href="/landing-page-services#tab_1_content_2">Managed Services</a>
+						<a href="/landing-page-services#tab_1_content_3">Coaching</a>
+						<a href="/landing-page-services#tab_1_content_4">Production</a>
+						
+					</div>
+					
+					<div class="col span_1_of_5 block">
+						<h4><a href="/why-ion-interactive">Why ion</a></h4>
+						<a href="/why-ion-interactive#tab_1_content_1">Results</a>
+						<a href="/why-ion-interactive#tab_1_content_2">Agility</a>
+						<a href="/why-ion-interactive#tab_1_content_3">Expertise</a>
+						
+						
+					</div>
+					
+					<div class="col span_1_of_5 block">
+						<h4><a href="/landing-page-resources">Resources</a></h4>
+						<a href="/post-click-marketing-blog">Blog</a>
+						<a href="/featured-white-papers">White Papers</a>
+						<a href="/landing-page-case-studies">Case Studies</a>
+						<a href="/landing-page-webinars">Webinars</a>
+						<a href="/landing-page-events">Events</a>
+					</div>
+					
+					
+					
+				</div>
+			<!-- end footer row 2 -->
+			
+			<!-- begin footer row 3 -->
+			<div class="section group clearfix">
+				<div class="col span_1_of_2">
+					&copy; i-on interactive, inc.
+				</div>
+				
+				
+				<div class="col span_1_of_2 right">
+					<a href="/privacy-policy">Privacy</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="/terms-and-conditions">Terms &amp; Conditions</a>
+				</div>
+			</div>
+			<!-- end footer row 3 -->
+			
+			
+			
+        </footer>
+    </div>
+	<!--End Footer-->
+   
+ </div>
+ <!-- End layout wrapper -->
+	
+	
+ 	
+	<!--<script type="text/javascript" src="/assets/mainnav_script.js"></script>-->
+	
+	<script>
+	
+var ww = document.body.clientWidth;
+
+$(document).ready(function() {
+	$(".nav li a").each(function() {
+		if ($(this).next().length > 0) {
+			$(this).addClass("parent");
+		};
+	})
+	
+	$(".toggleMenu").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(".nav").toggle();
+	});
+	adjustMenu();
+})
+
+$(window).bind('resize orientationchange', function() {
+	ww = document.body.clientWidth;
+	adjustMenu();
+});
+
+var adjustMenu = function() {
+	
+	
+	
+	if (ww < 768) {
+		$(".toggleMenu").css("display", "none");
+		if (!$(".toggleMenu").hasClass("active")) {
+			$(".nav").show();
+		} else {
+			$(".nav").show();
+		}
+		$(".nav li").unbind('mouseenter mouseleave');
+		$(".nav li a.parent").unbind('click').bind('click', function(e) {
+			// must be attached to anchor element to prevent bubbling
+			e.preventDefault();
+			$(this).parent("li").toggleClass("hover");
+		});
+	} 
+	else if (ww >= 768) {
+		$(".toggleMenu").css("display", "none");
+		$(".nav").show();
+		$(".nav li").removeClass("hover");
+		$(".nav li a").unbind('click');
+		$(".nav li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+		 	// must be attached to li so that mouseleave is not triggered when hover over submenu
+		 	$(this).toggleClass('hover');
+		});
+		
+		
+		
+		
+		
+	}
+}
+
+
+	
+	</script>
+	
+	
+
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	
+	 <script src="/scripts/selectivizr-min.js"></script>
+	<![endif]-->
+
+
+	
+	 <script src="/scripts/responsivegridsystem.js"></script>
+	
+
+    <!--INJECTION POINT FOR TRACKING SCRIPTS AND USER CONTENT FROM THE CODE INJECTION TAB-->
+
+    {squarespace-footers}
+    
+  </body>
+
+</html> 

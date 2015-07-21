@@ -1,0 +1,84 @@
+
+{.section item}
+
+  <!--WRAPPER-->
+  
+  <article id="post-{id}" class="{@|item-classes}">
+    
+    <!--POST TILE-->
+
+    <h1 class="title">
+      {.passthrough?}
+        <a href="{sourceUrl}">{title}</a>
+      {.or}
+        <a href="{fullUrl}">{title}</a>
+      {.end}
+    </h1>
+
+    <!--MAIN CONTENT-->
+
+    {body}
+
+    <!--BLOG INJECTION-->
+
+    {postItemInjectCode}    
+
+    <!--CATEGORIES-->
+
+    {.repeated section categories}
+      <a class="category" href="?category={@|url-encode}">{@}</a>{.alternates with},
+    {.end}
+
+    <!--TAGS-->
+
+    {.repeated section tags}
+      <a class="tag" href="?tag={@|url-encode}">{@}</a>{.alternates with},
+    {.end}
+
+    <!--SHARE AND LIKE-->
+
+    {@|like-button}
+    {@|social-button}
+
+   
+    <!--LOCATION-->
+
+    {.section location}
+      {.section addressTitle}
+        {addressTitle}
+        {addressLine1}
+        {addressLine2}
+        {addressCountry}
+      {.end}
+    {.end}
+
+
+
+  </article>
+
+{.end}
+    
+
+<!--PAGINATION-->
+  
+{.section pagination}
+  <nav>
+
+    <!--NEWER PAGE-->
+
+    {.section prevItem}
+      <a href="{fullUrl}">&laquo; Previous</a>
+    {.or}
+      <a class="disabled" style="display:none">&laquo; Previous</a>
+    {.end}
+    
+    <!--OLDER PAGE-->
+
+    {.section nextItem}
+      <a href="{fullUrl}">Next &raquo;</a>
+    {.or}
+      <a class="disabled" style="display:none">Next &raquo;</a>
+    {.end}
+
+  </nav>
+{.end}

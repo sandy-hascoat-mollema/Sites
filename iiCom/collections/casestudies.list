@@ -1,0 +1,105 @@
+
+<!-- CATEGORY FILTER RESULTS ex: http://base-template.squarespace.com/blog/?category=category1 -->
+
+{.section categoryFilter}
+  <p>Filtering by Category: {@}</p>
+{.end}
+
+<!-- TAG FILTER RESULTS ex: http://base-template.squarespace.com/blog/?tag=tag2 -->
+
+{.section tagFilter}
+  <p>Filtering by Tag: {@}</p>
+{.end}
+
+<!-- AUTHOR FILTER RESULTS ex: http://www.base-template.com/blog?author=4f046df4d09ae2cf23d1aaa2 -->
+
+{.section authorFilter}
+  <p>Filtering by Author: {@}</p>
+{.end}
+
+<!--ITEM LOOP-->
+
+{.repeated section items}
+
+  <!--WRAPPER-->
+  
+  <article id="post-{id}" class="{@|item-classes}">
+    
+    <!--MAIN IMAGE-->
+
+    {.main-image?}  
+      <a href="{fullUrl}" class="main-image content-fill">
+        <img {@|image-meta} />
+      </a>
+    {.end}
+
+    <!--POST TILE-->
+
+    <h1 class="title">
+      {.passthrough?}
+        <a href="{sourceUrl}">{title}</a>
+      {.or}
+        <a href="{fullUrl}">{title}</a>
+      {.end}
+    </h1>
+
+    <!--EXCERPT OR BODY-->
+
+    {.if excerpt}
+      {excerpt}
+      <a class="link" href="{fullUrl}">Read More</a>
+    {.or}
+
+      <!--MAIN CONTENT-->
+
+      {body}
+      <a class="link" href="{fullUrl}">Permalink</a>
+
+    {.end}
+
+    <!--BLOG INJECTION-->
+
+    {postItemInjectCode}    
+
+
+
+    <!--LOCATION-->
+
+    {.section location}
+      {.section addressTitle}
+        {addressTitle}
+        {addressLine1}
+        {addressLine2}
+        {addressCountry}
+      {.end}
+    {.end}
+
+  </article>
+
+  {.or}
+    No blog posts yet.
+{.end}
+  
+<!--PAGINATION-->
+  
+{.if pagination}
+  <nav>
+
+    <!--NEWER PAGE-->
+
+    {.if pagination.prevPage}
+      <a href="{pagination.prevPageUrl}">&laquo; Previous</a>
+    {.or}
+      <a class="disabled" style="display:none">&laquo; Previous</a>
+    {.end}
+
+    <!--OLDER PAGE-->
+
+    {.if pagination.nextPage}
+      <a href="{pagination.nextPageUrl}">Next &raquo;</a>
+    {.or}
+      <a class="disabled" style="display:none">Next &raquo;</a>
+    {.end}
+
+  </nav>
+{.end}

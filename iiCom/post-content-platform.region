@@ -1,0 +1,10 @@
+<!--Begin Post-content--> 
+        <section id="post_content_wrap">
+              <div id="post_content">
+						
+					<squarespace:block-field id="postContentLeftBlock_platform" columns="12" />
+					
+			  </div>
+         </section>
+<!--End Post-content-->
+	

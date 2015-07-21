@@ -1,0 +1,117 @@
+<!doctype html>
+
+<!-- HTML5 Mobile Boilerplate -->
+<!--[if IEMobile 7]><html class="no-js iem7"><![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+
+
+  <head>
+    
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+	<link rel="stylesheet" href="/styles/site.css" media="all">
+	
+    
+	
+	 <!--INCLUDE SQS SCRIPTS, META TAGS AND USER CONTENT FROM THE CODE INJECTION TAB-->
+
+    {squarespace-headers}
+	
+	
+  
+  
+  </head>
+
+  <body id="{squarespace.page-id}" class="{squarespace.page-classes}" style="background:#fff">
+    
+    
+     <!-- Begin layout wrapper -->
+    
+    <div id="wrapper">
+    
+    
+	 
+	 <!-- BEGIN MAIN CONTENT WRAP -->
+    
+     <div id="maincontent_wrap">
+    
+
+   
+
+
+
+
+
+
+
+<!-- begin main content section -->
+        <section id="content" class="clearfix">   
+			<div class="col span_12_of_12">
+			
+			<!--SITE TITLE OR LOGO-->
+
+						  {.section website}
+					
+							<div class="logo">
+							<div data-content-field="site-title">
+							 
+								{.section logoImageUrl}
+								 <img src="{logoImageUrl}?format=original" alt="{siteTitle}" />
+								{.or}
+								  {siteTitle}
+								{.end}
+							  
+							</div>
+							</div>
+					
+						  {.end}
+			
+				<!--CONTENT INJECTION POINT--> 
+				{squarespace.main-content}
+				
+				
+				
+			</div>
+		</section>
+<!-- end main content section -->
+
+
+
+
+
+
+</div>
+	<!-- END MAIN CONTENT WRAP -->
+
+
+   
+ </div>
+ <!-- End layout wrapper -->
+	
+	
+ 
+	 <script src="/scripts/responsivegridsystem.js"></script>
+	
+
+  </body>
+
+</html> 
+
+
+
+
+            
+             
+     
