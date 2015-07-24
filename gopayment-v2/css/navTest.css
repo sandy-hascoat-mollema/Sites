@@ -1,0 +1,53 @@
+/* dropdown nav styles */
+
+#header_nav_wrap h5.last {
+	position: relative;
+	width: 214px; }
+
+#header_nav_wrap h5.last:hover a {
+	background: transparent url(../images/bg_nav_last.gif) no-repeat left center; }
+
+#header_nav_wrap h5.last:hover ul a {
+	background: #fff; }
+
+ul.subnav { 
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	top: 37px;
+	left: -1px;
+	overflow: hidden;
+	width: 213px;
+	margin: 0;
+	padding: 4px 0 8px;
+	background: url(../images/bg_subnav.png) no-repeat left bottom; }
+
+#header_nav_wrap h5.last:hover ul.subnav,
+#header_nav_wrap h5.sfhover ul.subnav {
+	display: block; }
+
+
+#header_nav_wrap .last ul a {
+	display: block;
+	height: auto;
+	width: 180px;
+	margin: 0 2px;
+	padding: 2px 0 2px 20px;
+	color: #3366cc;
+	background: #fff;
+	text-align: left; }
+
+#header_nav_wrap li {
+	list-style: none; }
+	
+.subnav_arrow {
+	position: relative;
+	top: -2px;
+	padding-left: 3px; }
+	
+.nav_sup {
+	position: relative;
+	top: -5px;
+	font-size: 7px; }

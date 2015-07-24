@@ -1,0 +1,145 @@
+/* Common css file for these liveball iPhone generic master pages */
+
+
+/*	
+***
+	Launch Pad 2.1 common.css
+	Framwork specs:
+		760px wide 
+		12-column grid (46px columns) 
+		16px gutters and right/left margins 
+		Std column widths:
+			full	12-cols		728px
+			xl		9-cols		542px
+			l		7-cols		418px
+			m		5-cols		294px
+			s		3-cols		170px
+***		
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+form td {
+	vertical-align: middle;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+p         {margin-top: 0; margin-bottom: 10px;}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @group Structure */
+
+
+.spacer{
+	clear:both;
+}
+
+.right{
+	float:right;
+	clear:right;
+
+}
+
+.left{
+	float:left;
+	clear:left;
+
+}
+
+.block{
+	display:block;
+}
+
+.block_img{
+	display:block;
+	padding-bottom:7px;
+	padding-top:0px;
+}
+
+.block_btm_img{
+	display:block;
+	padding-bottom:0px;
+	padding-top:7px;
+}
+
+.inline{
+	display:inline;
+}
+
+form{
+	margin:0px;
+	padding:0px;
+}
+
+.caption             {font-size: 10px; line-height: 140%;}
+
+ul, ol    {margin-left: 2em;}
+ul        {list-style-type: disc;}
+ol        {list-style-type: decimal;}
+li		  {padding:5px 0px 5px 0px;}
+
+
+/*use this class to position an element at the top of the screen*/
+.anchorTop {
+        top: 0;
+    }
+	
+/*use this class to position an element at the bottom of the screen*/
+.anchorBottom {
+/* padding-bottom: 9px;*/
+        bottom: 0;
+    }
+	
+
+
+
+

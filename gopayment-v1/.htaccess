@@ -1,0 +1,109 @@
+#ON REWRITE RULES
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^ww1\.gopayment\.com
+RewriteRule .* - [L]
+
+RewriteCond %{HTTP_COOKIE} ^.*__gpfs.*$ [NC]
+RewriteRule .* - [L]
+
+RewriteCond %{REQUEST_URI} ^/?faq/?$ [NC,OR]
+RewriteCond %{REQUEST_URI} ^/?verizon/?$ [NC]
+RewriteCond %{REQUEST_URI} ^/?staples/?$ [NC]
+RewriteRule .* - [L]
+
+
+RewriteCond %{QUERY_STRING} redirect=no [NC,OR]
+RewriteCond %{HTTP_COOKIE} !redirect=no [NC]
+RewriteRule .* - [CO=redirect:no:.gopayment.com:3600:/]
+
+
+RewriteCond %{HTTP_COOKIE} ^.*__gpfs.*$ [NC]
+RewriteRule .* - [L]
+
+
+# redirect for BlackBerry Phone users
+RewriteCond %{HTTP_USER_AGENT} ^.*blackberry.*$ [NC]
+RewriteCond %{HTTP_COOKIE} !redirect=no [NC]
+RewriteRule .* http://www.intuit-gopayment.com/bberry [R,L]
+
+
+
+# redirect for Android Phone users
+RewriteCond %{HTTP_USER_AGENT} ^.*android.*$ [NC]
+RewriteCond %{HTTP_USER_AGENT} ^.*mobile.*$ [NC]
+RewriteCond %{HTTP_COOKIE} !redirect=no [NC]
+RewriteRule .* http://www.intuit-gopayment.com/android [R,L]
+
+
+
+# redirect for Android Tablet users
+RewriteCond %{HTTP_USER_AGENT} ^.*android.*$ [NC]
+RewriteCond %{HTTP_COOKIE} !redirect=no [NC]
+RewriteRule .* http://intuit-gopayment.com/androidtablet [R,L]
+
+
+# redirect for iPad users
+RewriteCond %{HTTP_USER_AGENT} ^.*iPad.*$
+RewriteCond %{HTTP_COOKIE} !redirect=no [NC]
+RewriteRule .* http://intuit-gopayment.com/ipad [R,L]
+
+
+# redirect for iPhone users
+RewriteCond %{HTTP_USER_AGENT} ^.*iPhone.*$ [NC]
+RewriteCond %{HTTP_COOKIE} !redirect=no [NC]
+RewriteRule .* http://intuit-gopayment.com/iPhone [R,L]
+
+
+# If mobile request /support/ redirect him to /faq/
+# if the browser accepts these mime-types, it's definitely mobile, or pretending to be a bunch of user agent tests
+RewriteCond %{HTTP_ACCEPT} "text\/vnd\.wap\.wml|application\/vnd\.wap\.xhtml\+xml" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "sony|symbian|nokia|samsung|mobile|windows ce|epoc|opera mini" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "mini|nitro|j2me|midp-|cldc-|netfront|mot|up\.browser|up\.link|audiovox"[NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "blackberry|ericsson,|panasonic|philips|sanyo|sharp|sie-"[NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "portalmmm|blazer|avantgo|danger|palm|series60|palmsource|pocketpc"[NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "smartphone|rover|ipaq|au-mic,|alcatel|ericy|vodafone\/|wap1\.|wap2\.|iphone|ipod|android"[NC]
+RewriteCond %{HTTP_COOKIE} !redirect=no [NC]
+RewriteRule ^/?support/?(.*)$ faq/$1 [R=301,L]
+
+
+RewriteRule ^small-biz.html http://gopayment.com/ [R=301,L]
+RewriteRule ^supported-phones.html http://gopayment.com/ [R=301,L]
+RewriteRule ^sitemap.html http://gopayment.com/ [R=301,L]
+RewriteRule ^pricing.html http://gopayment.com/ [R=301,L]
+RewriteRule ^mobile.html http://gopayment.com/ [R=301,L]
+RewriteRule ^mobile-home.html http://gopayment.com/ [R=301,L]
+RewriteRule ^media-buzz.html http://gopayment.com/ [R=301,L]
+RewriteRule ^iPhoneDemo.html http://gopayment.com/ [R=301,L]
+RewriteRule ^get-started.html http://gopayment.com/ [R=301,L]
+RewriteRule ^how-it-works.html http://gopayment.com/ [R=301,L]
+RewriteRule ^features-and-benefits.html http://gopayment.com/ [R=301,L]
+RewriteRule ^customer-videos.html http://gopayment.com/ [R=301,L]
+RewriteRule ^supported-phones/index.html http://gopayment.com/ [R=301,L]
+RewriteRule ^supported-phones/android.html http://gopayment.com/ [R=301,L]
+RewriteRule ^supported-phones/blackberry.html http://gopayment.com/ [R=301,L]
+RewriteRule ^supported-phones/iphone.html http://gopayment.com/ [R=301,L]
+RewriteRule ^intuit/small-biz.html http://gopayment.com/ [R=301,L]
+RewriteRule ^phones/index.html http://gopayment.com/ [R=301,L]
+RewriteRule ^staples/index.html http://www.intuit-gopayment.com/staples/ [R=301,L]
+RewriteRule ^verizonoffer/index.html http://www.intuit-gopayment.com/verizonoffer [R=301,L]
+RewriteRule ^signage/index.html http://gopayment.com/ [R=301,L]
+
+# mobile and not request /verizon or /faq redirect to m.intuit.com/payments
+# if the browser accepts these mime-types, it's definitely mobile, or pretending to be a bunch of user agent tests
+RewriteCond %{HTTP_ACCEPT} "text\/vnd\.wap\.wml|application\/vnd\.wap\.xhtml\+xml" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "sony|symbian|nokia|samsung|mobile|windows ce|epoc|opera mini" [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "mini|nitro|j2me|midp-|cldc-|netfront|mot|up\.browser|up\.link|audiovox"[NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "blackberry|ericsson,|panasonic|philips|sanyo|sharp|sie-"[NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "portalmmm|blazer|avantgo|danger|palm|series60|palmsource|pocketpc"[NC,OR]
+RewriteCond %{HTTP_USER_AGENT} "smartphone|rover|ipaq|au-mic,|alcatel|ericy|vodafone\/|wap1\.|wap2\."[NC]
+RewriteCond %{HTTP_COOKIE} !redirect=no [NC]
+RewriteRule (.*) http://m.intuit.com/payments/ [R,L]
+
+
+RewriteCond %{THE_REQUEST} \/index.html\ HTTP [NC]
+RewriteRule (.*)index.html$ /$1 [R=301,L]
+
+ErrorDocument 404 /404.php

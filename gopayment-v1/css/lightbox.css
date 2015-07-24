@@ -1,0 +1,92 @@
+
+			.lightboxField, .lightsDown {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;				
+				z-index: 9000;
+			}
+
+			.lightsDown {
+				background: #000;
+				opacity: 0.65;
+				filter:alpha(opacity=65);
+			}
+
+			.lightbox {
+				position: relative;
+				top: 5%;
+				margin: 0 auto;
+				width: 200px;
+				height: 200px;
+				z-index: 9001;
+			}
+
+			.lightbox .t, .lightbox .m, .lightbox .b,
+			.lightbox .l, .lightbox .c, .lightbox .r {
+				position: absolute;
+				background: url('../images/dialog.png') no-repeat;
+				padding-left:6px !important;	
+				padding-bottom: 6px !important;												
+			}
+
+			.lightbox .m.c {
+				overflow: hidden;				
+			}
+
+			.lightbox .l {
+				left: 0;
+				width: 20px;
+			}
+
+			.lightbox .c {
+				left: 20px;
+				right: 27px;				
+			}
+
+			.lightbox .r {
+				right: 0;
+				width: 27px;
+			}
+
+			.lightbox .t {
+				top: 0;
+				height: 28px;
+			}
+
+			.lightbox .m {
+				top: 28px;
+				bottom: 19px;				
+			}
+
+			.lightbox .b {
+				bottom: 0px;
+				height: 19px;				
+			}
+
+			.lightbox .t.l { background-position: top left; }
+			.lightbox .t.c { background-position: top center; }
+			.lightbox .t.r { background-position: top right; }
+			.lightbox .m.l { background-position: center left; }
+			.lightbox .m.c { background-position: center center;}
+			.lightbox .m.r { background-position: center right; }
+			.lightbox .b.l { background-position: bottom left; }
+			.lightbox .b.c { background-position: bottom center;}
+			.lightbox .b.r { background-position: bottom right; }
+
+			.lightbox #close {
+				position: absolute;
+				right: 0;
+				display: block;
+				width: 23px;
+				height: 22px;
+				text-indent: 9999px;
+				line-height: 9999px;
+				overflow: hidden;
+			}
+
+			#lightboxContents {
+				border: none;				
+			}

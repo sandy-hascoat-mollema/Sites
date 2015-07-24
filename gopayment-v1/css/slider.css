@@ -1,0 +1,161 @@
+
+
+/*
+	Page style
+*/
+
+#container_slides {
+	width:956px;
+	
+	padding:0px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+#slide_wrap {
+	width:956px;
+	height:401px;
+	position:relative;
+
+}
+
+
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:956px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:956px;
+	height:401px;
+	display:block;
+}
+
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:135px;
+	left:1px;
+	width:47px;
+	height:95px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:908px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	position:absolute;
+	z-index:200;
+	top:10px; right:15px;
+	margin:0px auto 0;
+	width:177px;
+
+}.pagination:after	{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.pagination  		{*zoom: 1;}
+
+.pagination li {
+	float:left;
+	margin:0 3px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:16px;
+	height:0;
+	padding-top:16px;
+	background-image:url(../how_it_works/img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -16px;
+}
+
+/*
+	Caption
+*/
+
+.slider_content{
+	z-index:500;
+	position:absolute;
+	top:77px;
+	right:115px;
+	width:400px;
+	color:#000;
+	font-size:14px;
+	font-family: "Lucida Sans Unicode","lucida sans", helvetica, arial;
+
+}
+.slider_content.narrow{
+	width:383px;
+}
+
+.slider_content h1{
+	color:#749c07;
+	font-size:38px;
+	line-height:40px;
+	margin:0 0 16px;
+	font-family: "MuseoSlab-700", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.slider_content a {font-size:12px;color:#2b73dd;text-decoration:none;}
+.slider_content a:hover {text-decoration:underline}
+
+#slider_givetry a{
+	display:block;
+	margin-top:40px;
+	width:358px;
+	height:113px;
+	background: url(../how_it_works/img/slider_giveitatry_btn.png) no-repeat top left;
+	text-decoration:none;
+}
+
+#slider_givetry a:hover{
+	background: url(../how_it_works/img/slider_giveitatry_btn.png) no-repeat bottom left;
+}
+
+
+

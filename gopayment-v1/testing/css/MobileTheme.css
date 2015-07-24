@@ -1,0 +1,346 @@
+/* iPhone specific framework CSS
+-------------------------------------*/
+	
+	body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+		font-size:14px;
+		line-height:130%;
+		color: #000;
+		background: #ffffff url(../images/mobile_320_bg.jpg) no-repeat;
+
+    }
+	
+	body[orient="landscape"] {
+		
+		background: #ffffff url(../images/mobile_bg.jpg) no-repeat;
+	}
+    
+   /* container elements
+	--------------------*/
+   
+   .wrapper{
+	
+		
+		
+   }
+   
+   
+    .container {
+
+    }
+	
+	.container_hook {
+		width:320px;
+	
+    }
+	
+	
+	body[orient="landscape"] .wrapper {
+		width:100%;
+		background: none;
+	
+	}
+	
+	body[orient="landscape"] .container {
+		margin:0 auto 0 auto;
+		/*width:370px;*/
+		
+		
+		
+	}
+	
+	body[orient="landscape"] .container_hook {
+		
+		margin-left:85px;
+	
+    }
+
+   
+
+	/* list items
+	--------------------*/
+	
+	.body_content_text{
+		
+		margin-left:3px;
+	}
+	
+	ul{
+		margin-top:3px;
+		margin-bottom:3px;
+	}
+	
+	li{
+		font-size:14px;
+		margin:0px;
+		padding:2px;
+	}
+	
+
+	
+	/*  headline items
+	--------------------*/
+	
+	h1{
+		margin:0px 0px 3px 3px;
+		font-size:22px;
+		line-height:110%;
+		color:#365ebf;
+		font-weight:normal;	
+	}
+	
+	
+
+	h2{
+		margin:8px 0px 10px 3px;
+		font-size:16px;
+		line-height:110%;
+		color:#666666;
+		font-weight:normal;
+	}
+	
+	
+	h3{
+		margin:7px 0px 0px 3px;
+		font-size:14px;
+		line-height:110%;
+		font-weight:normal;
+
+	}
+	
+
+
+	/* link items
+	--------------------*/
+	
+	a:link, a:active, a:visited{
+		text-decoration: underline; color: #0033cc;
+		
+	}
+	a:hover{
+		text-decoration:none;
+	}
+	
+
+	
+	/*  Header elements
+	--------------------*/
+	
+	.header {
+        height: 36px;
+        margin-left: 0;
+
+		
+    }
+	
+	
+	.logo{
+		margin-top: 0px;
+		margin-left:0px;
+		float:left;
+	}
+	
+	
+	
+	/* Content elements
+	--------------------*/
+	
+	 .content {
+		width:316px;
+		margin-left:2px;
+    }
+
+
+	.content_hook{
+		padding:10px 3px 5px 3px;
+		background:none;
+		
+	}
+	
+	
+	
+	.sublink{
+		display:block;
+		clear:both;
+		padding-top:7px;
+		padding-bottom:7px;
+		text-align:center;
+		font-size:14px;
+	}
+	
+	
+	.contentImg{
+		padding:10px 4px 10px 15px;
+	}
+	
+	
+	.cta_btn{
+		margin-bottom:2px;
+		margin-top:2px;
+		display:block;
+	}
+	
+	.page_link{
+		margin-left:4px;	
+	}
+	
+	
+	
+	.form_container{
+		margin-top:5px;
+		width:300px;
+		margin-left:5px;
+		clear:both;
+}
+
+	.form_footer{
+		font-size:12px;
+		line-height:120%;
+		margin-left:5px;
+		padding-top:3px;
+		clear:both;
+}
+
+
+	
+	
+	/* content image classes
+	-----------------------*/
+	
+	.content_images{
+		margin-top:3px;
+		margin-bottom:3px;
+		display:block;
+		width:310px;
+		clear:both;
+	}
+	
+	.content_images_one{
+		text-align:center;
+		margin-top:3px;
+		display:block;
+	}
+	
+	
+	
+	/*****cta layer buttons...png layered over the seg images******/
+	
+	#layer_container{
+		position:relative;
+		display:block;
+	}
+	
+	.image2_container{
+		
+		display:inline;
+		float:left;
+		width:155px;
+	}
+
+	
+	.twoSegCTA{
+		position:absolute;
+		z-index:9999;
+		bottom:0px;
+		left:0px;
+		height:40px;
+		width:155px;
+		line-height:40px;
+		text-align:center;
+		background: transparent url(../images/2segCTA_bg.png) no-repeat;
+	}
+	
+	.image3_container{
+		display:inline;
+		float:left;
+		width:103px;
+	}
+
+	
+	.threeSegCTA{
+		position:absolute;
+		z-index:9999;
+		bottom:0px;
+		left:0px;
+		height:40px;
+		width:103px;
+		line-height:40px;
+		text-align:center;
+		background: transparent url(../images/3segCTA_bg.png) no-repeat;
+	}
+	
+	a.twoSegCTA, a.threeSegCTA{
+		color:#fff;	
+		text-decoration:none;
+		padding:0px 0px 0px 0px;
+		
+	}
+	
+	a:hover.twoSegCTA, a:hover.threeSegCTA{
+		color:#fff;	
+		text-decoration:underline;
+	}
+	
+	
+	.image3_container{
+		display:inline;
+		float:left;
+		width:103px;
+	}
+
+	.image4_container{
+		display:inline;
+		float:left;
+		width:77px;
+	}
+	
+	.image3_2seg_container_large{
+		float:left;
+		width:195px;
+	}
+
+.image3_2seg_container_small{
+		float:right;
+		width:115px;
+	}
+		
+	
+	/*  Footer elements
+	--------------------*/
+	
+	.footer {
+		padding-left:5px;
+		padding-right: 5px;
+        font-size: 12px;
+        text-align: left;
+		padding-top:7px;
+		
+		
+    }
+	
+	.footer a:link, .footer a:active, .footer a:visited{
+		text-decoration:none;
+		color: #0033cc; 
+		padding-left:10px;
+	}
+	
+	.footer a:hover{
+		text-decoration:underline;
+	}
+	
+	#copyright{
+	text-align:left;
+	color:#666;
+	}
+	
+	#footer_links{
+		text-align:center;	
+	}
+	
+	#footer_links a{
+		margin-left:2px;	
+	}
+	
+	
