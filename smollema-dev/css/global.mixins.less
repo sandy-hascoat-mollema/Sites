@@ -1,0 +1,161 @@
+
+
+
+
+
+
+
+.gradient (@gradient, @bg) {
+  background: -webkit-gradient(@gradient),url(@bg) repeat 50% top;
+  background: -webkit-linear-gradient(@gradient),url(@bg) repeat 50% top;
+  background: -moz-linear-gradient(@gradient),url(@bg) repeat 50% top;
+  background: -ms-linear-gradient(@gradient),url(@bg) repeat 50% top;
+  background: -o-linear-gradient(@gradient),url(@bg) repeat 50% top;
+}
+
+
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+
+.animation(@animation){
+  -webkit-animation: @animation;
+  -moz-animation: @animation;
+  animation: @animation;
+}
+
+.animation-name(@animation-name){
+  -webkit-animation-name:@animation-name;
+  animation-name:@animation-name;
+}
+
+.animation-duration(@duration){
+  -webkit-animation-duration: @duration;
+  -moz-animation-duration: @duration;
+  animation-duration: @duration;
+}
+
+.animation-fill-mode(@fill-mode){
+  -webkit-animation-fill-mode:@fill-mode;
+  -moz-animation-fill-mode:@fill-mode;
+  animation-fill-mode:@fill-mode;
+}
+
+.animation-delay(@delay){
+  -webkit-animation-delay: @delay;
+  -moz-animation-delay:@delay;
+  animation-delay: @delay;
+}
+
+.transition(@transition){
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  -ms-transition: @transition;
+  transition: @transition;
+}
+
+.transition-delay(@delay){
+  -webkit-transition-delay: @delay;
+  -moz-transition-delay: @delay;
+  -o-transition-delay: @delay;
+  -ms-transition-delay: @delay;
+  transition-delay: @delay;
+}
+
+.transform(@string){
+  -webkit-transform: @string;
+  -moz-transform: 	 @string;
+  -ms-transform: 		 @string;
+  -o-transform: 		 @string;
+}
+
+.keyframe-fadeIn(@name) {
+  @-webkit-keyframes @name {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes @name {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes @name {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+// growIn
+
+.keyframe-growIn(@name) {
+  @-webkit-keyframes @name {
+    0% {
+      .transform(scale(0.2));
+      opacity:0;
+    }
+    50% {
+      .transform(scale(1.2));
+      -webkit-transform: scale(1.2);
+
+    }
+    100% {
+      .transform(scale(1));
+      opacity:1;
+    }
+  }
+
+  @-moz-keyframes @name {
+    0% {
+      .transform(scale(0.2));
+      opacity:0;
+    }
+    50% {
+      .transform(scale(1.2));
+      -webkit-transform: scale(1.2);
+
+    }
+    100% {
+      .transform(scale(1));
+      opacity:1;
+    }
+  }
+
+  @keyframes @name {
+    0% {
+      .transform(scale(0.2));
+      opacity:0;
+    }
+    50% {
+      .transform(scale(1.2));
+      -webkit-transform: scale(1.2);
+
+    }
+    100% {
+      .transform(scale(1));
+      opacity:1;
+    }
+  }
+}
