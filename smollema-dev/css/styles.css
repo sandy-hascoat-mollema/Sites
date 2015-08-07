@@ -59,7 +59,7 @@ h3 {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 1.25em;
-  color: #7c7c7c;
+  color: #444444;
 }
 .section-title,
 .section-title-white {
@@ -131,7 +131,7 @@ ul li span {
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -280,13 +280,13 @@ ul li span {
   margin: 5px 20px 0;
   position: relative;
   left: 100%;
-  font-size: 13px;
+  font-size: 0.75em;
 }
 .portfolio-animation figure figcaption strong {
   font-weight: 600;
 }
 .portfolio-animation figure figcaption .code-sample-container {
-  margin: 1em auto;
+  margin: 0.5em auto;
   display: block;
   text-align: center;
   width: 140px;
@@ -301,27 +301,26 @@ ul li span {
 .portfolio-animation figure figcaption .code-sample-container .code-sample:first-child {
   margin-left: 0;
 }
+.portfolio-animation figure figcaption .code-sample-container .code-sample.single {
+  float: none;
+}
 .portfolio-animation figure figcaption .code-sample-container .code-sample.socicon {
   font-size: 20px;
   line-height: 40px;
-  color: #fff;
+  color: #ffffff;
 }
 .portfolio-animation figure figcaption .code-sample-container .code-sample.codepen {
-  background: url(../images/icon-codepen.png) no-repeat;
+  background: url('../images/icon-codepen.png') no-repeat;
   width: 40px;
   height: 40px;
 }
 .portfolio-animation figure figcaption .code-sample-container .code-sample.zoom {
-  background: url(../images/icon-zoom.png) no-repeat;
+  background: url('../images/icon-zoom.png') no-repeat;
   width: 40px;
   height: 40px;
 }
-.portfolio-animation figure figcaption .btn-default {
-  padding: .5em;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  display: inline-block;
-  margin: 0px auto 0;
+.portfolio-animation figure figcaption .code-sample-container.two {
+  width: 90px;
 }
 .portfolio-animation figure:hover h3,
 .portfolio-animation figure:hover p {
@@ -540,35 +539,13 @@ Animations
 /* --------------------------------------
 Media Queries
 --------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  .portfolio-animation figure figcaption h3 {
-    font-size: .95em;
-  }
-  .portfolio-animation figure figcaption p {
-    font-size: .75em;
-  }
-  .portfolio-animation figure figcaption p.role {
-    display: none;
-  }
-  .portfolio-animation figure figcaption .code-sample-container {
-    margin-top: .25em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  body {
-    padding-top: 50px;
-  }
-  .hero {
-    height: 500px;
-    background-position: top left;
-  }
-  .hero .hero-content {
-    margin-top: 175px;
-  }
+@media only screen and (max-width: 960px) {
   .portfolio-animation figure {
     overflow: visible;
-    max-width: 75%;
-    margin: 10px auto 1em;
+    max-width: 95%;
+    margin: 10px auto 1.5em;
+    background: #f5f5f5;
+    padding-bottom: 1em;
     display: block;
   }
   .portfolio-animation figure:hover figcaption {
@@ -583,11 +560,11 @@ Media Queries
     position: static;
     height: auto;
     width: 100%;
-    color: #444;
+    color: #444444;
     background: none;
   }
   .portfolio-animation figure figcaption .code-sample-container .code-sample {
-    background-color: #0d9cd8;
+    background-color: #444444;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -596,27 +573,36 @@ Media Queries
     background-clip: padding-box;
   }
   .portfolio-animation figure figcaption .code-sample-container .code-sample.codepen {
-    background: #0d9cd8 url(../images/icon-codepen.png) no-repeat;
+    background: #444444 url('../images/icon-codepen.png') no-repeat;
   }
   .portfolio-animation figure figcaption .code-sample-container .code-sample.zoom {
-    background: #0d9cd8 url(../images/icon-zoom.png) no-repeat;
+    background: #444444 url('../images/icon-zoom.png') no-repeat;
   }
   .portfolio-animation figure figcaption .code-sample-container .code-sample:hover {
-    background-color: #aaaaaa;
+    background-color: #0d9cd8;
   }
   .portfolio-animation figure figcaption h3 {
-    color: #444;
-    margin: 15px 20px 10px;
+    color: #444444;
     position: relative;
     left: 0;
-    font-size: 1.3em;
     font-weight: 300;
   }
   .portfolio-animation figure figcaption p {
-    margin: 5px 20px 0;
     position: relative;
     left: 0;
-    font-size: 13px;
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 50px;
+  }
+  .hero {
+    height: 500px;
+    background-position: top left;
+  }
+  .hero .hero-content {
+    margin-top: 175px;
   }
   .headshot-img {
     width: 320px;
@@ -633,14 +619,14 @@ Media Queries
   .hero .hero-content {
     margin-top: 125px;
   }
-  .contact-icon-container .contact-icon a {
+  .contact-container .contact-icon-container .contact-icon a {
     width: 60px;
     height: 60px;
     line-height: 60px;
     font-size: 24px;
   }
 }
-@media only screen and (max-width: 640px) and only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .portfolio-animation figure {
     max-width: 100%;
   }
