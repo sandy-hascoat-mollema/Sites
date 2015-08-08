@@ -129,11 +129,12 @@ a {
 
 .btn-default {
 
+  border: @button-border;
+  font-size:@button-font-size;
   padding:@button-padding;
   color:@button-color;
-  border:@button-border;
+  margin-top:@button-margin;
   display:inline-block;
-  margin:@button-margin;
 
   &:hover,
   &:focus{
@@ -199,6 +200,7 @@ ul li {
 .navbar-default {
   background: @light;
   background: @light-trans;
+  border-bottom: 1px solid rgb(204,204,204);
   border-bottom: 1px solid rgba(0,0,0,.15);
 
       .navbar-nav > li > a {
@@ -246,7 +248,9 @@ ul li {
   margin-bottom: @hero-margin-bottom;
   height:@hero-height-desktop;
   .gradient(@hero-background-gradient,@hero-background-image);
-  background-size: @hero-background-size;
+//  background: url(@hero-background-image);
+
+  .background-size(@hero-background-size);
   background-attachment: @hero-background-attachment;
 
       .container {
@@ -272,7 +276,13 @@ ul li {
           font-weight:@hero-header-font-weight;
           color:@hero-header-font-color;
         }
+
+        &.hero-content-ie{
+          display:none;
+        }
       }
+
+
 }
 
 
@@ -310,6 +320,7 @@ ul li {
         height: 100%;
         width: 100%;
         font-weight:@font-weight-light;
+        background: @contact-section-figcaption-background-fallback;
         background: @contact-section-figcaption-background;
         color: @contact-section-figcaption-color;
         .transition(all @contact-section-figcaption-transition ease);
@@ -602,7 +613,8 @@ Media Queries
 
   .hero {
     height: @hero-height-tablet;
-    background-position: @hero-background-position-tablet;
+    .gradient(@hero-background-gradient,@hero-background-image-mobile);
+    .background-size(@hero-background-size);
   }
 
   .hero .hero-content{
@@ -610,7 +622,7 @@ Media Queries
   }
 
   .headshot-img {
-    width:320px;
+    width:275px;
   }
 
   footer{

@@ -49,7 +49,7 @@ h4 {
 }
 h1 {
   margin-bottom: 15px;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 h2 {
   margin-bottom: 10px;
@@ -97,11 +97,12 @@ a:focus {
   outline-offset: -2px;
 }
 .btn-default {
-  padding: 1em;
-  color: #ffffff;
   border: 2px solid #ffffff;
+  font-size: 0.95em;
+  padding: 0.8em 1.5em;
+  color: #ffffff;
+  margin-top: 25px;
   display: inline-block;
-  margin: 0.25em auto 0;
 }
 .btn-default:hover,
 .btn-default:focus {
@@ -163,6 +164,7 @@ ul li span {
 .navbar-default {
   background: #ffffff;
   background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #cccccc;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .navbar-default .navbar-nav > li > a {
@@ -203,7 +205,11 @@ ul li span {
   background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg.png') repeat 50% top;
   background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg.png') repeat 50% top;
   background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg.png') repeat 50% top;
-  background-size: auto, cover;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg.png') repeat 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-attachment: fixed;
 }
 .hero .container {
@@ -214,7 +220,7 @@ ul li span {
 }
 .hero .hero-content {
   font-weight: 300;
-  font-size: 1.4em;
+  font-size: 1.3em;
   color: #aaaaaa;
   text-align: center;
   width: 80%;
@@ -226,6 +232,9 @@ ul li span {
   text-transform: uppercase;
   font-weight: 400;
   color: #ffffff;
+}
+.hero .hero-content.hero-content-ie {
+  display: none;
 }
 /* --------------------------------------
  Portfolio Section
@@ -255,6 +264,7 @@ ul li span {
   height: 100%;
   width: 100%;
   font-weight: 300;
+  background: #000000;
   background: rgba(0, 0, 0, 0.8);
   color: #ffffff;
   -webkit-transition: all 0.5s ease;
@@ -599,13 +609,22 @@ Media Queries
   }
   .hero {
     height: 500px;
-    background-position: top left;
+    background: -webkit-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg-mobile-tab.jpg') repeat 50% top;
+    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg-mobile-tab.jpg') repeat 50% top;
+    background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg-mobile-tab.jpg') repeat 50% top;
+    background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg-mobile-tab.jpg') repeat 50% top;
+    background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg-mobile-tab.jpg') repeat 50% top;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.800784) 0%, rgba(0, 0, 0, 0.592157) 100%), url('../images/hero-bg-mobile-tab.jpg') repeat 50% top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   .hero .hero-content {
     margin-top: 175px;
   }
   .headshot-img {
-    width: 320px;
+    width: 275px;
   }
   footer {
     padding: 3em 1em;
@@ -617,7 +636,7 @@ Media Queries
     margin-bottom: 10px;
   }
   .hero .hero-content {
-    margin-top: 125px;
+    margin-top: 100px;
   }
   .contact-container .contact-icon-container .contact-icon a {
     width: 60px;

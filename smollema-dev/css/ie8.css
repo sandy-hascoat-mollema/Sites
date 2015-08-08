@@ -1,0 +1,29 @@
+
+body{
+    padding-top: 50px;
+}
+.navbar-toggle{display:none;}
+
+
+.navbar-default .navbar-nav{
+    width:450px;
+    float:right;
+}
+
+.navbar-default .navbar-nav > li > a{
+    float:left;
+}
+
+.navbar-default .navbar-nav > li:first-child > a{
+    margin-top:5px;
+}
+
+
+.hero {
+    background: url('../images/hero-bg-ie.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.img-thumbnail{
+    max-width: 95%;
+}

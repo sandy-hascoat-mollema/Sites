@@ -7,7 +7,7 @@
 @tablet-font-size:        110%;
 @desktop-font-size:       120%;
 @font-size-small:         .90em;
-@header-h1-size:          1.50em;
+@header-h1-size:          1.40em;
 @header-h2-size:          2.0em;
 @header-h3-size:          1.25em;
 
@@ -35,10 +35,11 @@
 @link-color:              @blue;
 @link-color-fade:         fade(@blue, 10%);
 @link-color-hover:        @medium-gray;
-@button-padding:          1em;
+@button-padding:          0.80em 1.50em;
 @button-color:            @light;
 @button-border:           2px solid @light;
-@button-margin:           .25em auto 0;
+@button-margin:           25px;
+@button-font-size:        .95em;
 
 
 @divider-color:           @medium-gray;
@@ -79,15 +80,17 @@
 @hero-margin-mobile:            10px;
 @hero-background-gradient:      90deg,rgba(0, 0, 0, 0.800784) 0%,rgba(0, 0, 0, 0.592157) 100%;
 @hero-background-image:         '../images/hero-bg.png';
-@hero-background-size:          auto,cover;
+@hero-background-image-mobile:  '../images/hero-bg-mobile-tab.jpg';
+@hero-background-size:           cover;
+@hero-background-size-mobile:    auto;
 @hero-background-attachment:    fixed;
 @hero-background-position-tablet:    top left;
 @hero-content-width:            80%;
 @hero-content-alignment:        center;
 @hero-content-margin-desktop:   200px;
 @hero-content-margin-tablet:    175px;
-@hero-content-margin-mobile:    125px;
-@hero-font-size:                1.4em;
+@hero-content-margin-mobile:    100px;
+@hero-font-size:                1.3em;
 @hero-font-weight:              @font-weight-light;
 @hero-font-color:               @medium-gray;
 @hero-header-letter-spacing:    2px;
@@ -102,6 +105,7 @@
 
 // portfolio section
 
+@contact-section-figcaption-background-fallback: rgb(0,0,0);
 @contact-section-figcaption-background: rgba(0,0,0,.80);
 @contact-section-figcaption-tablet-background: @lighter-gray;
 @contact-section-figcaption-transition: .5s;

@@ -5,6 +5,7 @@
   background: -moz-linear-gradient(@gradient),url(@bg) repeat 50% top;
   background: -ms-linear-gradient(@gradient),url(@bg) repeat 50% top;
   background: -o-linear-gradient(@gradient),url(@bg) repeat 50% top;
+  background: linear-gradient(@gradient),url(@bg) repeat 50% top;
 }
 
 
@@ -68,6 +69,13 @@
   -moz-transform: 	 @string;
   -ms-transform: 		 @string;
   -o-transform: 		 @string;
+}
+
+.background-size(@background-size){
+  -webkit-background-size: @background-size;
+  -moz-background-size: @background-size;
+  -o-background-size: @background-size;
+  background-size: @background-size;
 }
 
 .keyframe-fadeIn(@name) {
